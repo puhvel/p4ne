@@ -1,4 +1,4 @@
-from pysnmp.hlapi import *
+from pysnmp import hlapi
 
 ipaddr = u'10.31.70.107'
 port = 161
@@ -20,5 +20,8 @@ result2 = nextCmd(SnmpEngine(),
 for i in result:
     print(i[3][0])
 
+print("")
+
 for i in result2:
-    print(i[-1][0])
+#i_str=str(i[-1][0])
+    print(type(i))
