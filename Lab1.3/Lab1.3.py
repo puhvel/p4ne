@@ -1,4 +1,4 @@
-from pysnmp import hlapi
+from pysnmp.hlapi import *
 
 ipaddr = u'10.31.70.107'
 port = 161
@@ -23,5 +23,5 @@ for i in result:
 print("")
 
 for i in result2:
-#i_str=str(i[-1][0])
-    print(type(i))
+(i[-1][0])
+    print(i))
