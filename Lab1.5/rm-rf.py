@@ -9,10 +9,12 @@ strings_file = open("C:\\Users\\Dre\\Seafile\\p4ne_training\\config_files\\subst
 for file in files:
     f_open = open(file)
     for line in f_open:
-        if str(line).find("ip address "):
-            strings_file.write()
+        for str_find in line:
+            if str(line).find("ip address "):
+                strings_file.write(str_find)
     f_open.close()
     strings_file.write("")
     count = count + 1
 
 print(count)
+strings_file.close()
