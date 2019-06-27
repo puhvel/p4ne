@@ -23,5 +23,4 @@ for i in result:
 print("")
 
 for i in result2:
-(i[-1][0])
-    print(i))
+    print(i[-1][0])
