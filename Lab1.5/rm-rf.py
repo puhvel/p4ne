@@ -11,8 +11,8 @@ count=0
 for file in files:
     f_open = open(file)
     for line in f_open:
-        for str_find in line:
-            str(line).find("ip address ")==True:
+        if substr in line:
+            substr = (line).find("ip address ",line)
                 strings_file.write(str_find)
     f_open.close()
     strings_file.write("")
