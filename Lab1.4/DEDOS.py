@@ -20,3 +20,4 @@ class IPv4RandomNetwork(ipaddress.IPv4Network):
         def key_value(self):
             return
 
+

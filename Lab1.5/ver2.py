@@ -11,12 +11,19 @@ for file in files:
             substrings_file.write(line)
     f.close()
 
-mylist = []
 substrings_file.seek(0)
 
-for i in substrings_file: mylist.append[i]
-print(mylist)
+#ylist = list(substrings_file)
+
+for i in substrings_file:
+    i.replace(' ip address ', '')
+    str_filter1 = i.find('dhcp')
+    str_filter2 = i.find('match')
+    if str_filter1:
+        mylist.remove(i)
+    elif str_filter2:
+        mylist.remove(i)
 
 
-#убрать лишние и повторяющиеся значения из собраных данных
-#сортировать по ip и маске
+#print(mylist)
+#убрать лишние и повторяющиеся значения из собраных данных #сортировать по ip и маске
